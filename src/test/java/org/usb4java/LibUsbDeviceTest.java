@@ -314,7 +314,7 @@ public class LibUsbDeviceTest
         assumeNotNull(this.device);
         final int speed = LibUsb.getDeviceSpeed(this.device);
         assertTrue((speed >= LibUsb.SPEED_UNKNOWN)
-            && (speed <= LibUsb.SPEED_SUPER));
+            && (speed <= LibUsb.SPEED_SUPER_PLUS));
     }
 
     /**
